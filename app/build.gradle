@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+final VERSION_MAJOR = 0
+final VERSION_MINOR = 1
+final VERSION_PATCH = 0
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        // TODO: Change the applicationId
+        applicationId 'your.application.id'
+        minSdkVersion 21
+        targetSdkVersion 29
+        // versionCode pattern: XYYYZZZ (X - Major, YYY - Minor, ZZZ - Patch)
+        versionCode Integer.parseInt(String.valueOf(VERSION_MAJOR) + String.valueOf(VERSION_MINOR).padLeft(3, "0") + String.valueOf(VERSION_PATCH).padLeft(3, "0"))
+        versionName "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Kodebase Module
+    implementation project(':kodebase')
+
+    // AndroidX Basics
+    implementation "androidx.core:core-ktx:$versions.androidx"
+    implementation "androidx.appcompat:appcompat:$versions.appcompat"
+    implementation 'androidx.fragment:fragment:1.2.4'
+    implementation "androidx.constraintlayout:constraintlayout:$versions.constraintlayout"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "com.google.android.material:material:$versions.material"
+
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:$versions.lifecycle"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle"
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$versions.nav"
+    implementation "androidx.navigation:navigation-ui-ktx:$versions.nav"
+
+    // Koin for Android
+    implementation "org.koin:koin-android:$versions.koin"
+    implementation "org.koin:koin-androidx-scope:$versions.koin"
+    implementation "org.koin:koin-androidx-viewmodel:$versions.koin"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$versions.glide"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    kapt "com.github.bumptech.glide:compiler:$versions.glide"
+
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
