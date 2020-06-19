@@ -1,5 +1,5 @@
 # Kodebase Android
-Welcome! Kodebase is basic Android project skeleton, it's using MVVM architecture, data binding, navigation components and other common technologies. The goal of this project is saving your time, avoid boilerplate and let you focus on important things.
+Welcome! Kodebase is basic Android project skeleton with MVVM architecture, Data Binding, Navigation Components and other common technologies. The goal of this project is to save your time, avoid boilerplate code and let you focus on important things. Enjoy!
 
 ## Main Features
 - 100% Kotlin
