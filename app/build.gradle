@@ -30,6 +30,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    
+    buildFeatures {
+        dataBinding = true
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -38,10 +42,6 @@ android {
 
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
-    }
-
-    buildFeatures {
-        dataBinding = true
     }
 }
 
@@ -55,7 +55,7 @@ dependencies {
     // AndroidX Basics
     implementation "androidx.core:core-ktx:$versions.androidx"
     implementation "androidx.appcompat:appcompat:$versions.appcompat"
-    implementation 'androidx.fragment:fragment:1.2.4'
+    implementation 'androidx.fragment:fragment:1.2.5'
     implementation "androidx.constraintlayout:constraintlayout:$versions.constraintlayout"
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation "com.google.android.material:material:$versions.material"

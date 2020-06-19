@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="app.ui.main.MainFragmentDirections"/>
+        <variable
+            name="vm"
+            type="app.ui.main.MainVM" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="app.ui.main.MainFragment">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome to Kodebase!"
+            android:textSize="20sp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="https://github.com/kodebase-android"
+            app:onClickUrl='@{"https://github.com/kodebase-android"}'
+            app:layout_constraintTop_toBottomOf="@id/textWelcome"/>
+
+        <TextView
+            android:id="@+id/textIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:text="Now you have everything set up and you can focus on important things. If you want to boost your productivity even more, use Kodebase Templates for Android Studio.\n\nFeel free to use Sandbox for testing your UI components. If you have any questions, ideas or you want to contribute, visit Kodebase GitHub, enjoy!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textWelcome" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonGetStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:onClickUrl='@{"https://github.com/kodebase-android"}'
+            android:text="Get Started"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textIntro" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSandbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> vm.navigateToSandbox()}"
+            android:text="Sandbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonGetStarted" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

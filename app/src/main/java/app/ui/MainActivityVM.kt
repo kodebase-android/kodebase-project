@@ -2,5 +2,5 @@ package app.ui
 
 import app.ui.base.BaseVM
 
-class MainVM : BaseVM() {
+class MainActivityVM : BaseVM() {
 }

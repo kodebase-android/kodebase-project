@@ -5,7 +5,7 @@
     <data>
         <variable
             name="vm"
-            type="app.ui.MainVM" />
+            type="app.ui.MainActivityVM" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout

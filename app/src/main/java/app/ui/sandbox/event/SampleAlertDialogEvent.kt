@@ -1,4 +1,4 @@
-package app.ui.sample.event
+package app.ui.sandbox.event
 
 import kodebase.event.LiveEvent
 

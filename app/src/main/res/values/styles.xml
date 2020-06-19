@@ -1,5 +1,4 @@
 <resources>
-
     <style name="Toolbar" parent="Widget.MaterialComponents.Toolbar">
         <item name="android:background">@color/colorPrimary</item>
     </style>

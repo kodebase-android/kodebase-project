@@ -7,7 +7,7 @@ import app.R
 import app.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : BaseActivity<ActivityMainBinding, MainVM>(R.layout.activity_main, MainVM::class) {
+class MainActivity : BaseActivity<ActivityMainBinding, MainActivityVM>(R.layout.activity_main, MainActivityVM::class) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
