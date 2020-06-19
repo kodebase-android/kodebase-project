@@ -1,13 +1,15 @@
 package app.di
 
-import app.ui.MainVM
-import app.ui.sample.SampleVM
+import app.ui.MainActivityVM
+import app.ui.main.MainVM
+import app.ui.sandbox.SandboxVM
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val viewModelModule = module {
+    viewModel { MainActivityVM() }
     viewModel { MainVM() }
-    viewModel { SampleVM() }
+    viewModel { SandboxVM() }
 }
 
 val repositoryModule = module {

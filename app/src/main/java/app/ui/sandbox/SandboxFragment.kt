@@ -1,14 +1,14 @@
-package app.ui.sample
+package app.ui.sandbox
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import app.ui.base.BaseFragment
 import app.R
-import app.databinding.FragmentSampleBinding
-import app.ui.sample.event.SampleAlertDialogEvent
+import app.databinding.FragmentSandboxBinding
+import app.ui.sandbox.event.SampleAlertDialogEvent
 
-class SampleFragment : BaseFragment<FragmentSampleBinding, SampleVM>(R.layout.fragment_sample, SampleVM::class) {
+class SandboxFragment : BaseFragment<FragmentSandboxBinding, SandboxVM>(R.layout.fragment_sandbox, SandboxVM::class) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
