@@ -6,6 +6,11 @@ import android.util.Log
 import android.view.View
 import androidx.databinding.BindingAdapter
 
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
 
 @BindingAdapter("backgroundResource")
 fun setBackgroundResource(view: View, resId: Int) {

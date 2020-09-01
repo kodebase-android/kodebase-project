@@ -9,6 +9,12 @@ import kodebase.viewmodel.KodebaseViewModel
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
+
 @BindingAdapter(
     value = ["viewModel", "items", "layoutId", "tabLayout"],
     requireAll = false

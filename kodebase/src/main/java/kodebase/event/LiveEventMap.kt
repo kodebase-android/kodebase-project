@@ -5,6 +5,12 @@ import androidx.lifecycle.Observer
 import java.util.*
 import kotlin.reflect.KClass
 
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
+
 class LiveEventMap {
 
     private val events = HashMap<KClass<out LiveEvent>, SingleLiveEvent<out LiveEvent>>()

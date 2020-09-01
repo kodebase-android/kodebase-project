@@ -15,7 +15,9 @@ import kodebase.event.NavigationEvent
 import kotlin.reflect.KClass
 
 /**
- * Created by Stepan on 11.10.2016.
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
  */
 
 abstract class KodebaseViewModel : ViewModel(), LifecycleObserver {

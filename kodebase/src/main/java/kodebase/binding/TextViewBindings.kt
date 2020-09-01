@@ -4,6 +4,11 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
 
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
 
 @BindingAdapter("textColorResource")
 fun setTextColor(editText: TextView, resId: Int?) {

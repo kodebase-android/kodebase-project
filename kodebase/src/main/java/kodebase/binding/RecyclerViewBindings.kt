@@ -10,9 +10,10 @@ import kodebase.adapter.SingleTypeRecyclerAdapter
 import kodebase.adapter.MultiTypeRecyclerAdapter
 import kodebase.viewmodel.KodebaseViewModel
 
-
 /**
- * Created by Stepan on 23.11.2016.
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
  */
 
 @BindingAdapter(

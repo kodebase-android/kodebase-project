@@ -11,6 +11,13 @@ import androidx.recyclerview.widget.RecyclerView
 import kodebase.viewmodel.KodebaseViewModel
 import kodebase.BR
 
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
+
+
 abstract class KodebaseRecyclerAdapter<T> : RecyclerView.Adapter<KodebaseRecyclerAdapter<T>.BaseMvvmRecyclerViewHolder<T>> {
 
     private var viewModel: KodebaseViewModel? = null

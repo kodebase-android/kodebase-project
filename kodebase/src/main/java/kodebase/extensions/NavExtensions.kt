@@ -3,6 +3,12 @@ package kodebase.extensions
 import androidx.navigation.NavController
 import kodebase.event.NavigationEvent
 
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
+
 fun NavController.navigate(navEvent: NavigationEvent) {
     if (navEvent.resId != null) {
         navigate(navEvent.resId!!, navEvent.navArgs, navEvent.navOptions, navEvent.navExtras)

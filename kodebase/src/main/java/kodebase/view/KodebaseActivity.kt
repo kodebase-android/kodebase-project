@@ -21,6 +21,12 @@ import kodebase.R
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import kotlin.reflect.KClass
 
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
+
 abstract class KodebaseActivity<B : ViewDataBinding, out VM : KodebaseViewModel>(@LayoutRes var layoutId: Int, viewModelClass: KClass<VM>) :
     AppCompatActivity() {
 

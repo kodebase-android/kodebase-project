@@ -9,7 +9,7 @@
         android:id="@+id/main"
         android:name="app.ui.main.MainFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_main_to_sandbox"
             app:destination="@id/sandbox" />
@@ -20,4 +20,5 @@
         android:name="app.ui.sandbox.SandboxFragment"
         android:label="Sandbox"
         tools:layout="@layout/fragment_sandbox" />
+
 </navigation>

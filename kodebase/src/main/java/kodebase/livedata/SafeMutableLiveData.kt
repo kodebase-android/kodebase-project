@@ -4,7 +4,13 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 
-class NullSafeLiveData<T : Any>(initValue: T) : MutableLiveData<T>() {
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
+
+class SafeMutableLiveData<T : Any>(initValue: T) : MutableLiveData<T>() {
 
     init {
         value = initValue

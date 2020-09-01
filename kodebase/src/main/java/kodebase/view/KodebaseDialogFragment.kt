@@ -22,6 +22,12 @@ import kodebase.BR
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 import kotlin.reflect.KClass
 
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
+
 abstract class KodebaseDialogFragment<B : ViewDataBinding, VM : KodebaseViewModel>(@LayoutRes val layoutId: Int, viewModelClass: KClass<VM>) :
     DialogFragment() {
 

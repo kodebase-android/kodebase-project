@@ -7,6 +7,13 @@ import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import java.io.File
 
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
+
+
 @BindingAdapter(value = ["imageResource"], requireAll = false)
 fun setImageResource(view: AppCompatImageView, resId: Int) {
     view.setImageResource(resId)

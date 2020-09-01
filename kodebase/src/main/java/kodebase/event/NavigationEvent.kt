@@ -5,6 +5,12 @@ import androidx.navigation.NavDirections
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.FragmentNavigator
 
+/**
+ * Handcrafted by Stepan Sonsky
+ * Apache 2.0 License
+ * https://github.com/kodebase-android
+ */
+
 class NavigationEvent() : LiveEvent() {
 
     var resId: Int? = null

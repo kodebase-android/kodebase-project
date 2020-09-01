@@ -14,7 +14,7 @@ android {
 
     defaultConfig {
         // TODO: Change the applicationId
-        applicationId 'your.application.id'
+        applicationId 'com.example.app'
         minSdkVersion 21
         targetSdkVersion 29
         // versionCode pattern: XYYYZZZ (X - Major, YYY - Minor, ZZZ - Patch)
@@ -30,7 +30,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    
+
     buildFeatures {
         dataBinding = true
     }
